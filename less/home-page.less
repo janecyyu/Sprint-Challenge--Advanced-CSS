@@ -3,14 +3,32 @@
 .home {
 
   .intro {
+    @media @phone {
+      .df(flex-end,"");
+      flex-direction: column;
+      width: 100%;
+      flex-wrap: wrap;
+    }
     .banner {
       @media @phone {
-        height: 100px;
+        height: 50px;
       }
       height: 200px;
       width: 100%;
-      background-image: url(../img/main-header.png);
+      img {
+        @media @phone {
+          width: 100%;
+        }
+      }
+
     }//for banner
+    .under-banner {
+      @media @phone {
+        margin-top: 50px;
+      }
+    }
+
+
     padding-top:120px;
     h2 {
       padding: 15px;

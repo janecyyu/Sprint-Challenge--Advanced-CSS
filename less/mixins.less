@@ -1,1 +1,23 @@
 // Mixins Here
+.df(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.my-btn (@bgc:black, @width:100px){
+    display: block;
+    background-color: @bgc;
+    color: white;
+    width: @width;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor:pointer;
+
+    &:hover {
+        color: @bgc;
+        background-color: white;
+    }
+}
